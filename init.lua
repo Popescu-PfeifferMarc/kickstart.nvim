@@ -437,6 +437,12 @@ require('lazy').setup({
     end,
   },
 
+  -- Copilot
+  --{ "LazyVim/LazyVim", import = "lazyvim.plugins" },
+  --{ import = "lazyvim.plugins.extras.coding.copilot" },
+  --{ import = "plugins" },
+  { "github/copilot.vim" },
+
   -- LSP Plugins
   {
     -- `lazydev` configures Lua LSP for your Neovim config, runtime and plugins
@@ -450,7 +456,7 @@ require('lazy').setup({
       },
     },
   },
-  { 'Bilal2453/luvit-meta',     lazy = true },
+  { 'Bilal2453/luvit-meta', lazy = true },
   {
     "pmizio/typescript-tools.nvim",
     dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
